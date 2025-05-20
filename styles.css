@@ -123,7 +123,7 @@ ul li {
 
 /* Highlight important text */
 .highlight {
-  color: #00b8a9; /* Light teal color for highlights to make them stand out */
+  color: #003d47; /* Light teal color for highlights to make them stand out */
   font-weight: 700;
   background-color: rgba(0, 184, 169, 0.1); /* Subtle background highlight for contrast */
   padding: 2px 4px;
