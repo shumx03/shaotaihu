@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #ffffff; /* White background */
   color: #000000; /* Black text */
-  line-height: 1.7;
+  line-height: 1.5; /* Reduced line-height */
   margin: 0;
   padding: 0;
 }
@@ -19,19 +19,31 @@ body {
 header {
   background: #ffffff; /* White header */
   color: #000000; /* Black text */
-  padding: 30px 0;
+  padding: 20px 0; /* Reduced padding */
   text-align: center;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Reduced size */
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Reduced size */
   font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  font-size: 0.9rem; /* Smaller font size for list items */
+  margin-bottom: 5px;
 }
 
 /* Main section styling */
@@ -43,16 +55,17 @@ main {
 
 /* Section styles */
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduced margin between sections */
 }
 
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem; /* Reduced size */
   color: #000000;
-  border-bottom: 3px solid #000000;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #000000; /* Thinner border */
+  padding-bottom: 8px; /* Reduced padding */
+  margin-bottom: 16px; /* Reduced margin */
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -60,40 +73,43 @@ ul {
 }
 
 ul li {
-  margin-bottom: 15px;
+  margin-bottom: 12px; /* Reduced space between list items */
+  font-size: 1rem; /* Uniform font size */
 }
 
 /* Experience & Education item styling */
 .experience-item, .education-item {
   background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Reduced padding */
+  margin-bottom: 20px; /* Reduced margin */
+  border-radius: 8px; /* Slightly smaller border radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
 }
 
 .experience-item h3, .education-item h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem; /* Smaller heading font size */
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 6px; /* Reduced space below headings */
   font-weight: 600;
 }
 
 .experience-item p, .education-item p {
   font-size: 1rem;
-  color: #000000; /* Changed from muted gray to black */
+  color: #000000;
+  line-height: 1.6; /* Adjusted line-height */
+  margin-bottom: 10px;
 }
 
 /* Footer styles */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 20px; /* Reduced padding */
   background: #ffffff; /* White footer */
   color: #000000;
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller footer text */
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -114,8 +130,8 @@ button {
   background-color: #000000;
   color: #ffffff;
   border: none;
-  padding: 12px 25px;
-  font-size: 1.1rem;
+  padding: 10px 20px; /* Smaller button padding */
+  font-size: 1rem; /* Smaller font size */
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s, transform 0.2s;
@@ -130,6 +146,7 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
