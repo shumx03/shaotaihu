@@ -59,12 +59,12 @@ nav.toolbar {
 
 nav.toolbar ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
+  display: block;  /* Changed from flex to block */
 }
 
 nav.toolbar ul li {
   font-size: 1.1rem;
+  margin-bottom: 10px;  /* Added margin to give some spacing between items */
 }
 
 nav.toolbar ul li a {
@@ -204,21 +204,3 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
