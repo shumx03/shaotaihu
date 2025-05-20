@@ -53,8 +53,8 @@ header ul li a:hover {
 /* Toolbar styles */
 nav.toolbar {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 20px;
+  left: 40px;
 }
 
 nav.toolbar ul {
@@ -65,7 +65,9 @@ nav.toolbar ul {
 nav.toolbar ul li {
   font-size: 1.2rem;
   margin-bottom: 10px;  /* Added margin to give some spacing between items */
-  background-color: #9de3fa;
+  background-color: #00637C;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 nav.toolbar ul li a {
