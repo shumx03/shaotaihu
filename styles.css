@@ -9,7 +9,7 @@
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   background-color: white;
-  color: #4b1f1f; /* Wine red color */
+  color: #07575B; /* Wine red color */
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #4b1f1f;
+  background-color: #07575B;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -47,8 +47,8 @@ main {
 
 .section h2 {
   font-size: 2rem;
-  color: #4b1f1f;
-  border-bottom: 2px solid #4b1f1f;
+  color: #07575B;
+  border-bottom: 2px solid #07575B;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
@@ -72,7 +72,7 @@ ul li {
 
 .experience-item h3, .education-item h3 {
   font-size: 1.5rem;
-  color: #4b1f1f;
+  color: #07575B;
   margin-bottom: 5px;
 }
 
@@ -85,7 +85,7 @@ ul li {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #4b1f1f;
+  background-color: #07575B;
   color: white;
 }
 
@@ -96,7 +96,7 @@ footer p {
 
 /* Links and buttons */
 a {
-  color: #4b1f1f;
+  color: #07575B;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ a:hover {
 }
 
 button {
-  background-color: #4b1f1f;
+  background-color: #07575B;
   color: white;
   border: none;
   padding: 10px 20px;
