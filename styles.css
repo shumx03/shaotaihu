@@ -130,13 +130,3 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline; /* Keeps text aligned */
-}
-
-.location {
-  margin-left: auto; /* Pushes this element to the far right */
-}
