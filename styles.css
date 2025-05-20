@@ -68,7 +68,7 @@ main {
 .section h2 {
   font-size: 1.8rem;
   color: #003d47; /* Dark teal for section headers */
-  border-bottom: 4px solid #01F9C6; /* Teal underline for headings */
+  border-bottom: 4px solid #48D1CC; /* Teal underline for headings */
   padding-bottom: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
