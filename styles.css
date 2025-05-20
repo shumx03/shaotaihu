@@ -21,6 +21,7 @@ header {
   color: #fff;
   padding: 10px 0 5px 0;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -46,6 +47,34 @@ header ul li a {
 
 header ul li a:hover {
   color: #ffffff; /* Hover effect for links */
+  text-decoration: underline;
+}
+
+/* Toolbar styles */
+nav.toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+nav.toolbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav.toolbar ul li {
+  font-size: 1.1rem;
+}
+
+nav.toolbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.toolbar ul li a:hover {
+  color: #179c97;
   text-decoration: underline;
 }
 
@@ -175,7 +204,6 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
-
 
 
 
