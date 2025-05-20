@@ -62,13 +62,13 @@ main {
   border-radius: 6px;
   margin-bottom: 10px;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .section h2 {
   font-size: 1.8rem;
   color: #003d47; /* Dark teal for section headers */
-  border-bottom: 3px solid #00CC99; /* Teal underline for headings */
+  border-bottom: 4px solid #00CC99; /* Teal underline for headings */
   padding-bottom: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -94,7 +94,7 @@ ul li {
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .experience-item h3, .education-item h3 {
