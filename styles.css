@@ -124,7 +124,7 @@ ul li {
 /* Highlight important text */
 .highlight {
   color: #003d47; /* Light teal color for highlights to make them stand out */
-  background-color: #66B2B2; /* Subtle background highlight for contrast */
+  background-color: #9de3fa; /* Subtle background highlight for contrast */
   padding: 2px 4px;
   border-radius: 4px;
 }
