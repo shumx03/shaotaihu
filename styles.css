@@ -18,7 +18,7 @@ body {
 /* Header styles */
 header {
   background: linear-gradient(135deg, #2C3E50, #1A3C4A); /* Gradient from dark blue to deep teal */
-  color: white;
+  color: white; /* Text in header is white */
   padding: 30px 0;
   text-align: center;
 }
@@ -32,6 +32,18 @@ header h1 {
 header p {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+/* Ensure links inside header are white */
+header a {
+  color: white; /* Links in the header will be white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #8E44AD; /* Light purple color on hover */
+  text-decoration: underline;
 }
 
 /* Main section styling */
@@ -100,7 +112,7 @@ footer p {
 
 /* Links and buttons */
 a {
-  color: #1A3C4A;
+  color: #1A3C4A; /* Default link color */
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -130,3 +142,4 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
