@@ -8,8 +8,8 @@
 /* General body styles */
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
-  background-color: #f4f4f4; /* Light gray background for a modern touch */
-  color: #333; /* Dark gray text */
+  background-color: #000; /* Light gray background for a modern touch */
+  color: #000; /* Black text */
   line-height: 1.6;
   padding: 0;
   margin: 0;
@@ -17,7 +17,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333; /* Dark background for the header */
+  background-color: #000; /* Black background for the header */
   color: #fff; /* White text */
   padding: 30px 0 10px 0;
   text-align: center;
@@ -40,7 +40,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #f1c40f;
+  color: #FB4D46; /* New red color */
   text-decoration: none;
 }
 
@@ -67,8 +67,8 @@ main {
 
 .section h2 {
   font-size: 2.4rem;
-  color: #2c3e50;
-  border-bottom: 3px solid #f1c40f; /* Yellow underline for headings */
+  color: #000; /* Black text */
+  border-bottom: 3px solid #FB4D46; /* Red underline for headings */
   padding-bottom: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -76,7 +76,7 @@ main {
 
 .section p, .section ul li {
   font-size: 1.1rem;
-  color: #555;
+  color: #000; /* Black text */
   margin-bottom: 15px;
 }
 
@@ -100,18 +100,18 @@ ul li {
 .experience-item h3, .education-item h3 {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #000; /* Black text */
   margin-bottom: 8px;
 }
 
 .experience-item p, .education-item p {
   font-size: 1rem;
-  color: #333;
+  color: #000; /* Black text */
 }
 
 /* Highlight important text */
 .highlight {
-  color: #f1c40f;
+  color: #FB4D46; /* New red color */
   font-weight: bold;
 }
 
@@ -119,8 +119,8 @@ ul li {
 footer {
   text-align: center;
   padding: 20px;
-  background: #333;
-  color: #fff;
+  background: #000; /* Black background for footer */
+  color: #fff; /* White text */
 }
 
 footer p {
@@ -131,19 +131,19 @@ footer p {
 
 /* Links and buttons */
 a {
-  color: #333;
+  color: #000; /* Black text */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #f1c40f;
+  color: #FB4D46; /* New red color */
   text-decoration: underline;
 }
 
 button {
-  background-color: #333;
-  color: #fff;
+  background-color: #000; /* Black background for buttons */
+  color: #fff; /* White text */
   border: none;
   padding: 12px 20px;
   font-size: 1.1rem;
@@ -153,7 +153,7 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #333; /* Slightly lighter black for hover effect */
   transform: scale(1.05);
 }
 
