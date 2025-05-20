@@ -68,7 +68,7 @@ main {
 .section h2 {
   font-size: 1.8rem;
   color: #003d47; /* Dark teal for section headers */
-  border-bottom: 4px solid #00CC99; /* Teal underline for headings */
+  border-bottom: 4px solid #20B2AA; /* Teal underline for headings */
   padding-bottom: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -168,7 +168,7 @@ button {
 }
 
 button:hover {
-  background-color: #2c5d64; /* Lighter teal for hover effect */
+  background-color: #20B2AA; /* Lighter teal for hover effect */
   transform: scale(1.05);
 }
 
