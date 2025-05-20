@@ -21,7 +21,6 @@ header {
   color: #fff;
   padding: 10px 0 5px 0;
   text-align: center;
-  position: relative;
 }
 
 header h1 {
@@ -47,34 +46,6 @@ header ul li a {
 
 header ul li a:hover {
   color: #ffffff; /* Hover effect for links */
-  text-decoration: underline;
-}
-
-/* Toolbar styles */
-nav.toolbar {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-nav.toolbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav.toolbar ul li {
-  font-size: 1.1rem;
-}
-
-nav.toolbar ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav.toolbar ul li a:hover {
-  color: #179c97;
   text-decoration: underline;
 }
 
@@ -205,7 +176,44 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Toolbar styles - Keep left-aligned, just moved to the right slightly */
+nav.toolbar {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 20px; /* Slightly moved to the right, adjust this value to your preference */
+  transform: translateY(-50%); /* Center vertically */
+  background-color: #9de3fa; /* Light blue box */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for the toolbar */
+}
 
+nav.toolbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px;
+}
+
+nav.toolbar ul li {
+  font-size: 1.2rem;
+}
+
+nav.toolbar ul li a {
+  display: block;
+  color: #003d47; /* Teal text for links */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav.toolbar ul li a:hover {
+  background-color: #003d47; /* Dark teal on hover */
+  color: #fff; /* White text on hover */
+}
 
 
 
