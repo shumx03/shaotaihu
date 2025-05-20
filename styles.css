@@ -54,7 +54,6 @@ main {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px;
-  margin-left: 80px; /* Added space for the toolbar */
 }
 
 /* Section styles */
@@ -179,7 +178,7 @@ html {
 
 /* Toolbar styles - Keep left-aligned, vertical format, and fixed to the top left */
 nav.toolbar {
-  position: fixed;
+  position: sticky;
   top: 20px; /* Distance from the top of the page */
   left: 20px; /* Distance from the left edge */
   background-color: #9de3fa; /* Light blue box */
