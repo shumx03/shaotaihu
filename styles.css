@@ -68,7 +68,7 @@ main {
 .section h2 {
   font-size: 1.8rem;
   color: #003d47; /* Dark teal for section headers */
-  border-bottom: 3px solid #40E0D0; /* Teal underline for headings */
+  border-bottom: 3px solid #00CC99; /* Teal underline for headings */
   padding-bottom: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -125,7 +125,7 @@ ul li {
 .highlight {
   color: #003d47; /* Light teal color for highlights to make them stand out */
   font-weight: 700;
-  background-color: #40E0D0; /* Subtle background highlight for contrast */
+  background-color: #00CC99; /* Subtle background highlight for contrast */
   padding: 2px 4px;
   border-radius: 4px;
 }
