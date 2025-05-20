@@ -176,17 +176,16 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Toolbar styles - Positioned at the top-left corner */
+/* Toolbar styles - Keep left-aligned, just moved to the right slightly */
 nav.toolbar {
-  position: absolute; /* Set position to absolute for fixed placement */
-  top: 0; /* Align to top */
-  left: 0; /* Align to the left edge */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 20px; /* Slightly moved to the right, adjust this value to your preference */
+  transform: translateY(-50%); /* Center vertically */
   background-color: #9de3fa; /* Light blue box */
-  padding: 10px 15px; /* Adjust padding for appropriate space */
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for the toolbar */
-  z-index: 1000; /* Ensure it stays above other content */
-  height: 60px; /* Match the header height */
 }
 
 nav.toolbar ul {
@@ -196,8 +195,6 @@ nav.toolbar ul {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   gap: 10px;
-  height: 100%; /* Take full height of the toolbar */
-  justify-content: center; /* Center items vertically */
 }
 
 nav.toolbar ul li {
@@ -217,6 +214,11 @@ nav.toolbar ul li a:hover {
   background-color: #003d47; /* Dark teal on hover */
   color: #fff; /* White text on hover */
 }
+
+
+
+
+
 
 
 
