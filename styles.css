@@ -7,24 +7,25 @@
 
 /* General body styles */
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: white;
-  color: #07575B; /* teal */
-  line-height: 1.6;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Light off-white for contrast */
+  color: #1A3C4A; /* Darker teal, deeper tone for readability */
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
 
 /* Header styles */
 header {
-  background-color: #07575B;
+  background: linear-gradient(135deg, #2C3E50, #1A3C4A); /* Gradient from dark blue to deep teal */
   color: white;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -35,22 +36,23 @@ header p {
 
 /* Main section styling */
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px;
 }
 
 /* Section styles */
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .section h2 {
-  font-size: 2rem;
-  color: #07575B;
-  border-bottom: 2px solid #07575B;
+  font-size: 2.2rem;
+  color: #1A3C4A;
+  border-bottom: 3px solid #1A3C4A;
   padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 ul {
@@ -58,63 +60,73 @@ ul {
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 /* Experience & Education item styling */
 .experience-item, .education-item {
-  background-color: #f9f9f9;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .experience-item h3, .education-item h3 {
-  font-size: 1.5rem;
-  color: #07575B;
-  margin-bottom: 5px;
+  font-size: 1.6rem;
+  color: #2C3E50;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .experience-item p, .education-item p {
   font-size: 1rem;
-  color: #666;
+  color: #7f8c8d; /* Muted gray for text */
 }
 
 /* Footer styles */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #07575B;
+  padding: 25px;
+  background: #1A3C4A;
   color: white;
 }
 
 footer p {
   font-size: 1rem;
   font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 /* Links and buttons */
 a {
-  color: #07575B;
+  color: #1A3C4A;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #8E44AD; /* Light purple color on hover */
   text-decoration: underline;
 }
 
 button {
-  background-color: #07575B;
+  background-color: #1A3C4A;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 12px 25px;
+  font-size: 1.1rem;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #8a2c2c;
+  background-color: #8E44AD; /* Subtle purple hover effect */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
