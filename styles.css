@@ -19,7 +19,7 @@ body {
 header {
   background-color: #003d47; /* Darker teal for header */
   color: #fff;
-  padding: 10px 0 0px 0;
+  padding: 10px 0 3px 0;
   text-align: center;
   position: relative;
 }
@@ -85,7 +85,7 @@ nav.toolbar ul li a:hover {
 main {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
 }
 
 /* Section styles */
