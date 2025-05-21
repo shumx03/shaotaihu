@@ -54,7 +54,7 @@ header ul li a:hover {
 nav.toolbar {
   position: absolute;
   top: 20px;
-  Right: 300px;
+  Right: 400px;
 }
 
 nav.toolbar ul {
@@ -210,5 +210,5 @@ html {
 
 /* Scale everything to 80% */
 .scale-wrapper {
-  zoom: 0.85;
+  zoom: 0.88;
 }
