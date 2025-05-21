@@ -46,7 +46,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #9de3fa; /* Hover effect for links */
+  color: #00637C; /* Hover effect for links */
   text-decoration: underline;
 }
 
@@ -54,7 +54,7 @@ header ul li a:hover {
 nav.toolbar {
   position: absolute;
   top: 20px;
-  left: 300px;
+  left: 1000px;
 }
 
 nav.toolbar ul {
