@@ -208,7 +208,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Scale everything to 80% */
+/* Scale everything to % */
 .scale-wrapper {
-  zoom: 0.88;
+  zoom: 0.91;
 }
