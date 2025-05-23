@@ -54,7 +54,7 @@ header ul li a:hover {
 nav.toolbar {
   position: absolute;
   top: 20px;
-  Right: 400px;
+  right: 400px;
 }
 
 nav.toolbar ul {
