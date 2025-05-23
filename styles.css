@@ -213,17 +213,15 @@ html {
   zoom: 0.95;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
+/* Profile image in header */
 .profile-img {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 20px;
+  border: 2px solid #ffffff;
 }
 
