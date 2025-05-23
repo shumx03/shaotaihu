@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #002b36; /* Deep ocean background */
   color: #ffffff; /* Light text color */
-  line-height: 1.5;
+  line-height: 1.4;
   padding: 0;
   margin: 0;
 }
@@ -36,7 +36,7 @@ header ul {
 }
 
 header ul li {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 0px;
 }
 
@@ -54,7 +54,7 @@ header ul li a:hover {
 nav.toolbar {
   position: absolute;
   top: 20px;
-  right: 700px;
+  right: 600px;
 }
 
 nav.toolbar ul {
@@ -216,8 +216,8 @@ html {
 /* Profile image in header */
 .profile-img {
   position: absolute;
-  top: 0px;
-  left: 900px;
+  top: 3px;
+  left: 880px;
   width: 100px;
   height: 140px;
   object-fit: cover;
