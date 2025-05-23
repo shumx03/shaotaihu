@@ -26,7 +26,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 650;
   margin-bottom: 2px;
 }
 
@@ -217,7 +217,7 @@ html {
 .profile-img {
   position: absolute;
   top: 0px;
-  left: 700px;
+  left: 800px;
   width: 100px;
   height: 140px;
   object-fit: cover;
