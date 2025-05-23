@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #002b36; /* Deep ocean background */
   color: #ffffff; /* Light text color */
-  line-height: 1.4;
+  line-height: 1.5;
   padding: 0;
   margin: 0;
 }
@@ -26,7 +26,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  font-weight: 650;
+  font-weight: 600;
   margin-bottom: 2px;
 }
 
@@ -217,7 +217,7 @@ html {
 .profile-img {
   position: absolute;
   top: 0px;
-  left: 800px;
+  left: 900px;
   width: 100px;
   height: 140px;
   object-fit: cover;
