@@ -54,7 +54,7 @@ header ul li a:hover {
 nav.toolbar {
   position: absolute;
   top: 20px;
-  right: 400px;
+  right: 800px;
 }
 
 nav.toolbar ul {
@@ -210,16 +210,16 @@ html {
 
 /* Scale everything to % */
 .scale-wrapper {
-  zoom: 1.5;
+  zoom: 1.7;
 }
 
 /* Profile image in header */
 .profile-img {
   position: absolute;
   top: 0px;
-  left: 600px;
+  left: 800px;
   width: 100px;
-  height: 150px;
+  height: 130px;
   object-fit: cover;
 }
 
