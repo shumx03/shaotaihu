@@ -210,16 +210,16 @@ html {
 
 /* Scale everything to % */
 .scale-wrapper {
-  zoom: 0.95;
+  zoom: 1.1;
 }
 
 /* Profile image in header */
 .profile-img {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 400px;
   width: 100px;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
 }
 
