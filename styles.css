@@ -216,10 +216,10 @@ html {
 /* Profile image in header */
 .profile-img {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 400px;
   width: 150px;
-  height: 170px;
+  height: 160px;
   object-fit: cover;
 }
 
