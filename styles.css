@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #002b36; /* Deep ocean background */
   color: #ffffff; /* Light text color */
-  line-height: 1.4;
+  line-height: 1.6;
   padding: 0;
   margin: 0;
 }
@@ -63,7 +63,7 @@ nav.toolbar ul {
 }
 
 nav.toolbar ul li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;  /* Added margin to give some spacing between items */
   background-color: #00637C;
   padding: 2px 4px;
