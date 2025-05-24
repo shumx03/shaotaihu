@@ -220,6 +220,6 @@ html {
   left: 400px;
   width: 150px;
   height: 165px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
