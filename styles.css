@@ -26,9 +26,9 @@ header {
 
 header h1 {
   font-size: 3.1rem;
-  top: 300px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 header ul {
