@@ -223,6 +223,10 @@ html {
   object-fit: contain;
 }
 
-.indented-text {
-  text-indent: 40px; 
+.indented-one {
+  margin-left: 2em; /* or use padding-left: 2em; */
+}
+
+.indented-two {
+  margin-left: 4em; /* or use padding-left: 2em; */
 }
