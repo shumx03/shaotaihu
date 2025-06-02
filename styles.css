@@ -25,10 +25,10 @@ header {
 }
 
 header h1 {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   top: 150px;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 header ul {
@@ -217,10 +217,10 @@ html {
 /* Profile image in header */
 .profile-img {
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: 400px;
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
 }
 
