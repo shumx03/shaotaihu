@@ -2,232 +2,220 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
-  --bg-top: #002438;   /* top of ocean gradient */
-  --bg-bottom:#003f57; /* bottom of ocean gradient */
-  --accent:  #0fb0d6;
-  --muted:   #9dbac6;
-  --shadow:  0 8px 24px rgba(0,0,0,0.6);
-  --max-width: 1160px; /* wider layout */
+  --bg: #003241;          /* single consistent dark-blue ocean background */
+  --card-bg: rgba(255,255,255,0.02);
+  --accent-blue: #007bff; /* bright blue for all links */
+  --muted: #9dbac6;
+  --shadow: 0 6px 18px rgba(0,0,0,0.45);
+  --max-width: 1180px;
   --radius: 10px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
 }
 
-/* Full-page smooth gradient so color change is continuous across the whole page */
+/* Global background consistent across entire page */
 html, body {
   height: 100%;
-  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background-color: var(--bg);
   color: #eef6fb;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Centered page wrapper with more horizontal space and reduced vertical padding */
+/* Page container: wider and flatter, tighter padding */
 .page{
   max-width: var(--max-width);
-  margin: 24px auto;
-  padding: 18px 20px;
-  background: rgba(6,22,30,0.18); /* subtle translucent plate so background gradient remains visible */
-  border-radius: 12px;
+  margin: 18px auto;
+  padding: 12px 14px;
+  background: var(--card-bg);
+  border-radius: 10px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Header - make it compact (shorter visually) */
+/* Header compact and balanced */
 .site-header{
-  padding: 12px 14px;
+  padding: 8px 6px;
   background: transparent;
-  border-radius: 10px;
-  margin-bottom: 14px;
-  position: relative;
+  margin-bottom: 10px; /* tighter gap below header */
 }
 
-/* Top area: image + title side-by-side, tighter spacing */
+/* Header top: inline layout, smaller gaps */
 .header-top{
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
 }
 
-/* Slightly larger profile image in a compact frame */
+/* Slightly smaller profile image (requested smaller than previous) */
 .profile-frame{
-  width: 170px;
-  height: 170px;
-  border-radius: 10px;
-  background: rgba(15,176,214,0.04);
-  border: 1px solid rgba(15,176,214,0.14);
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.03);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
   flex-shrink: 0;
 }
 
 .profile-photo{
-  width: 162px;
-  height: 162px;
+  width: 132px;
+  height: 132px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
   display: block;
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Title block: reduce vertical space and make name bolder */
+/* Title block with reduced vertical spacing */
 .title-block .name{
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   margin-bottom: 6px;
   color: #e9fbff;
   font-weight: 700;
 }
 
-/* Contact list inline; allow more items per line */
+/* Contact list inline and compact */
 .contact-list{
   list-style: none;
   display: flex;
-  gap: 14px;
+  gap: 10px;
   flex-wrap: wrap;
   color: var(--muted);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
-/* Horizontal navigation row placed directly under header-top */
+/* Bright blue for all links (email, github, repos, nav, etc.) */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover { text-decoration: underline; color: #66a8ff; }
+
+/* Horizontal interactive buttons smaller and tighter, placed under header-top */
 .quick-nav{
-  margin-top: 10px;
+  margin-top: 8px;
   width: 100%;
 }
 
 .quick-nav ul{
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-/* Interactive buttons horizontally across */
 .quick-nav a{
   display: inline-block;
-  padding: 8px 14px;
-  background: rgba(255,255,255,0.02);
-  color: #dff7ff;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.01);
+  color: var(--accent-blue);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   border-radius: 8px;
-  text-decoration: none;
   border: 1px solid rgba(255,255,255,0.02);
-  transition: transform .12s ease, background .12s ease, color .12s ease;
+  transition: transform .10s ease, background .10s ease;
 }
 
 .quick-nav a:hover{
   transform: translateY(-2px);
-  background: rgba(15,176,214,0.08);
-  color: #bff8ff;
+  background: rgba(255,255,255,0.02);
 }
 
-/* Main content uses tighter vertical spacing, cards are flatter */
+/* Main content uses tighter vertical spacing and smaller gaps */
 .content{
-  margin-top: 12px;
+  margin-top: 8px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
-  padding-bottom: 10px;
+  gap: 8px;
+  padding-bottom: 8px;
 }
 
-/* Cards are more transparent so the global gradient shows through evenly */
+/* Cards are flatter and compact */
 .card{
-  background: rgba(255,255,255,0.02);
-  padding: 14px;
+  background: rgba(255,255,255,0.01);
+  padding: 12px;
   border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.025);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.36);
+  border: 1px solid rgba(255,255,255,0.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.36);
 }
 
-/* Slightly smaller heading ornament to reduce vertical footprint */
+/* Smaller headings to reduce vertical footprint */
 .card h2{
   color: #e8fbff;
-  font-size: 1.02rem;
-  margin-bottom: 8px;
+  font-size: 1.00rem;
+  margin-bottom: 6px;
   font-weight: 700;
-  padding-bottom: 6px;
   text-transform: uppercase;
-  border-bottom: 2px solid rgba(15,176,214,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+  padding-bottom: 6px;
 }
 
-/* Tighter paragraph spacing */
+/* Tighter paragraph spacing and slightly smaller text */
 .card p{
   color: var(--muted);
-  font-size: 0.96rem;
-  margin-bottom: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
 }
 
-/* Experience items flatter and compact */
+/* Experience items compact */
 .experience-item{
-  background: rgba(255,255,255,0.01);
-  padding: 10px;
+  background: rgba(255,255,255,0.005);
+  padding: 8px 10px;
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.02);
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .experience-item h3{
   color: #e8fbff;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   margin-bottom: 6px;
   font-weight: 600;
 }
 
 .experience-item .meta{
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   margin-bottom: 6px;
   font-style: italic;
 }
 
-/* Indentation utilities retained (compact values) */
-.indent-1{ margin-left: 0.7rem; color: var(--muted); }
-.indent-2{ margin-left: 1.4rem; color: var(--muted); }
+/* Indentation utilities compacted */
+.indent-1{ margin-left: 0.6rem; color: var(--muted); }
+.indent-2{ margin-left: 1.1rem; color: var(--muted); }
 
-/* Links inside content */
-.content a{
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.content a:hover{ text-decoration: underline; color: #8fe8ff; }
-
-/* Footer compact */
+/* Footer compact and tight */
 .site-footer{
-  margin-top: 14px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 8px;
   text-align: center;
   color: #cfeff6;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   border-top: 1px solid rgba(255,255,255,0.02);
 }
 
-/* Responsive adjustments: keep header compact and horizontal where possible */
-@media (max-width: 1080px){
-  :root{ --max-width: 920px; }
-  .profile-frame{ width: 150px; height: 150px; }
-  .profile-photo{ width: 142px; height: 142px; }
-  .contact-list{ gap: 10px; }
-}
-
-@media (max-width: 720px){
-  :root{ --max-width: 640px; }
-  .header-top{ flex-direction: row; align-items: center; gap: 12px; }
+/* Responsive adjustments for very small screens keep layout tight */
+@media (max-width: 900px){
+  :root{ --max-width: 860px; }
   .profile-frame{ width: 120px; height: 120px; }
   .profile-photo{ width: 112px; height: 112px; }
-  .quick-nav ul{ justify-content: center; }
 }
 
-@media (max-width: 480px){
-  .header-top{ flex-direction: column; align-items: center; gap: 10px; }
+@media (max-width: 640px){
+  .header-top{ flex-direction: column; align-items: center; gap: 8px; }
   .title-block .name{ text-align: center; }
   .contact-list{ justify-content: center; gap: 8px; }
-  .profile-frame{ width: 110px; height: 110px; }
-  .profile-photo{ width: 102px; height: 102px; }
-  .page{ padding: 12px; margin: 12px; }
+  .profile-frame{ width: 112px; height: 112px; }
+  .profile-photo{ width: 104px; height: 104px; }
+  .quick-nav ul{ justify-content: center; gap: 6px; }
+  .page{ padding: 8px; margin: 8px; }
 }
+
