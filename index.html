@@ -2,187 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shaotai Hu - Resume</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shaotai Hu — Resume</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <div class="header-top">
-        <div class="profile-frame" aria-hidden="true">
-          <img src="images/shaotaihu.jpg" alt="Shaotai Hu profile photo" class="profile-photo" />
-        </div>
-
-        <div class="title-block">
-          <h1 class="name">Shaotai Hu</h1>
-          <ul class="contact-list">
-            <li>Email: <a href="mailto:shhu1@bu.edu">shhu1@bu.edu</a></li>
-            <li>GitHub: <a href="https://github.com/shumx03" target="_blank" rel="noopener noreferrer">https://github.com/shumx03</a></li>
-            <li>Boston, MA</li>
-          </ul>
-        </div>
+  <div class="site">
+    <aside class="sidebar" role="complementary">
+      <div class="photo-wrap">
+        <img src="images/shaotaihu.jpg" alt="Shaotai Hu profile photo" class="photo">
       </div>
 
-      <nav class="quick-nav" aria-label="Page sections">
+      <h1 class="name">Shaotai Hu</h1>
+
+      <ul class="contact">
+        <li>Email: <a href="mailto:shhu1@bu.edu">shhu1@bu.edu</a></li>
+        <li>GitHub: <a href="https://github.com/shumx03" target="_blank" rel="noopener noreferrer">github.com/shumx03</a></li>
+        <li>Boston, MA</li>
+      </ul>
+
+      <nav class="side-nav" aria-label="Quick navigation">
         <ul>
           <li><a href="#education">Education</a></li>
           <li><a href="#education-awards">Presentations &amp; Awards</a></li>
-          <li><a href="#areas">Research</a></li>
+          <li><a href="#areas">Research Areas</a></li>
           <li><a href="#research-experience">Research Experience</a></li>
           <li><a href="#professional-experience">Professional Experience</a></li>
           <li><a href="#course-work">Project Experience</a></li>
           <li><a href="#life">Leadership &amp; Service</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main class="content" id="top">
-      <section id="education" class="card">
+      <footer class="sidebar-footer">
+        <small>By Shaotai Hu · Last updated 6/4/2025</small>
+      </footer>
+    </aside>
+
+    <main class="main" role="main">
+      <section id="education" class="block">
         <h2>Education</h2>
-        <p><b>Boston University</b> | Faculty of Computing &amp; Data Sciences (CDS)</p>
-        <p>
-          Bachelor of Science in <b>Data Science</b> |
-          <b>GPA: 3.95 / 4.0</b>
-          | Expected Graduation May 2026
-        </p>
-        <p>Minor in Statistics: <b>Statistical Methods</b> </p>
+        <p><strong>Boston University</strong> | Faculty of Computing &amp; Data Sciences (CDS)</p>
+        <p>Bachelor of Science in <strong>Data Science</strong> | <strong>GPA: 3.95 / 4.0</strong> | Expected Graduation May 2026</p>
+        <p>Minor in Statistics: <strong>Statistical Methods</strong></p>
       </section>
 
-      <section id="education-awards" class="card">
+      <section id="education-awards" class="block">
         <h2>PRESENTATIONS &amp; AWARDS</h2>
-        <p><b>Boston University 2025 UROP Symposium</b> | Upcoming October 2025</p>
-        <p><b>Student Research Award Funding – Boston University UROP</b> | Spring 2025</p>
-        <p><b>University Scholarship – Boston University CGS Special Recognition Award</b> | Spring 2024</p>
-        <p><b>Dean’s Circle</b> (GPA 3.7+) &amp; <b>Dean’s List</b> (GPA 3.5+)</p>
+        <p><strong>Boston University 2025 UROP Symposium</strong> | Upcoming October 2025</p>
+        <p><strong>Student Research Award Funding – Boston University UROP</strong> | Spring 2025</p>
+        <p><strong>University Scholarship – Boston University CGS Special Recognition Award</strong> | Spring 2024</p>
+        <p><strong>Dean’s Circle</strong> (GPA 3.7+) &amp; <strong>Dean’s List</strong> (GPA 3.5+)</p>
       </section>
 
-      <section id="areas" class="card">
+      <section id="areas" class="block">
         <h2>Research Areas</h2>
         <p>AI in cancer research, ML &amp; generative adversarial network in radiation oncology, Bayesian networks, Spatial biology &amp; transcriptomics, Convolutional neural networks in biological imaging.</p>
         <p>"Applied artificial intelligence to improve precision and personalization in medical treatments, particularly in oncology."</p>
       </section>
 
-      <section id="research-experience" class="card">
+      <section id="research-experience" class="block">
         <h2>Research Experience</h2>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>AI Research Assistant under Prof. Samuel Luk, Radiation Oncology AI Research</h3>
-          <p class="meta"><i>Boston University Chobanian &amp; Avedisian School of Medicine | October 2024 – Present</i></p>
-          <p class="indent-1">Project 1: Multi-Institutional Study on the Effect of Difference in Clinical Practices on a Bayesian Network Based Quality Assurance Tool.</p>
-          <p class="indent-2">• Developed Python package that uses NLP, vector space models, and differential privacy to quantify differences in radiation oncology practices across clinics.</p>
-          <p class="indent-2">• Analyzing how these differences affect error detection Bayesian model performance through statistical tests in R to improve generalizability of AI models in radiation oncology.</p>
-          <p class="indent-2">• <b>Project 1 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/VSM_RadOnc/vsm/Full_VSM_PL.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/VSM</a></b>   <i>**Working on paper for publication**</i></p>
+          <p class="meta"><em>Boston University Chobanian &amp; Avedisian School of Medicine | October 2024 – Present</em></p>
+          <p class="indent">Project 1: Multi-Institutional Study on the Effect of Difference in Clinical Practices on a Bayesian Network Based Quality Assurance Tool.</p>
+          <p class="indent">• Developed Python package that uses NLP, vector space models, and differential privacy to quantify differences in radiation oncology practices across clinics.</p>
+          <p class="indent">• Analyzing how these differences affect error detection Bayesian model performance through statistical tests in R to improve generalizability of AI models in radiation oncology.</p>
+          <p class="indent">• <strong>Project 1 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/VSM_RadOnc/vsm/Full_VSM_PL.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/VSM</a></strong> <em>**Working on paper for publication**</em></p>
 
-          <p class="indent-1">Project 2: Improve Quality and Efficiency of Pretreatment Physics Plan Review using Explainable Deep Learning Models.</p>
-          <p class="indent-2">• Building autoencoder &amp; transformer models and decoding them with generative adversarial network models in Python &amp; R.</p>
-        </div>
+          <p class="indent">Project 2: Improve Quality and Efficiency of Pretreatment Physics Plan Review using Explainable Deep Learning Models.</p>
+          <p class="indent">• Building autoencoder &amp; transformer models and decoding them with generative adversarial network models in Python &amp; R.</p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Spatial Biology Research Assistant in Dries Lab under Prof. Ruben Dries &amp; Junxiang Xu</h3>
-          <p class="meta"><i>Boston University Genetics &amp; Genomics | September 2024 – Present</i></p>
-          <p class="indent-1">Project: Spatial Transcriptomics and Proteomics Analysis on Tumor Tissue with Giotto Suite in R.</p>
-          <p class="indent-2">• Conducted tumor tissue gene expression and protein spatial analysis through K-means &amp; hierarchical clustering, enrichment, coordinate transfer with Visium data and Giotto Suite in R to identify regions of interest to resect for further analysis.</p>
-          <p class="indent-2">• Built working laser resection XML pipeline in R.</p>
-          <p class="indent-2">• <b>Project Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/SpatialBio_Giotto/cord_trans_final.R" target="_blank" rel="noopener noreferrer">shaotaihu/SpatialBio</a></b>   <i>**Working on paper for publication**</i></p>
-        </div>
+          <p class="meta"><em>Boston University Genetics &amp; Genomics | September 2024 – Present</em></p>
+          <p class="indent">Project: Spatial Transcriptomics and Proteomics Analysis on Tumor Tissue with Giotto Suite in R.</p>
+          <p class="indent">• Conducted tumor tissue gene expression and protein spatial analysis through K-means &amp; hierarchical clustering, enrichment, coordinate transfer with Visium data and Giotto Suite in R to identify regions of interest to resect for further analysis.</p>
+          <p class="indent">• Built working laser resection XML pipeline in R.</p>
+          <p class="indent">• <strong>Project Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/SpatialBio_Giotto/cord_trans_final.R" target="_blank" rel="noopener noreferrer">shaotaihu/SpatialBio</a></strong> <em>**Working on paper for publication**</em></p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>AI Research Assistant in SMGAL Lab under Prof. Christopher Schmitt &amp; Prof. Evelyn Pain</h3>
-          <p class="meta"><i>Boston University Anthropology | September 2024 – Present</i></p>
-          <p class="indent-1">Project: Classifying Night Monkeys with Convolutional Neural Networks using Camera Trap Data.</p>
-          <p class="indent-2">• Developing 3 convolutional neural networks to classify night monkey camera trap images, current precision 92%. </p>
-          <p class="indent-2">• Using CNN output to reveal novel patterns in night monkey behavior with respect to temperature, lunar cycle and season.</p>
-          <p class="indent-2">• Designed functioning text extraction pipeline to expedite raw camera trap image processing workflow.</p>
-          <p class="indent-2">• <b>Project Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/SMAGL_CNN/CNN_SMAGL_ShaotaiHu.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/CNN</a></b>   <i>**Working on paper for publication**</i></p>
-        </div>
+          <p class="meta"><em>Boston University Anthropology | September 2024 – Present</em></p>
+          <p class="indent">Project: Classifying Night Monkeys with Convolutional Neural Networks using Camera Trap Data.</p>
+          <p class="indent">• Developing 3 convolutional neural networks to classify night monkey camera trap images, current precision 92%.</p>
+          <p class="indent">• Using CNN output to reveal novel patterns in night monkey behavior with respect to temperature, lunar cycle and season.</p>
+          <p class="indent">• Designed functioning text extraction pipeline to expedite raw camera trap image processing workflow.</p>
+          <p class="indent">• <strong>Project Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/SMAGL_CNN/CNN_SMAGL_ShaotaiHu.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/CNN</a></strong> <em>**Working on paper for publication**</em></p>
+        </article>
       </section>
 
-      <section id="professional-experience" class="card">
+      <section id="professional-experience" class="block">
         <h2>Professional Experience</h2>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Spark! DS594: Data Visualization X-Lab Practicum with Dr. Julia Koehler</h3>
-          <p class="meta"><i>Boston University CDS Spark! | January 2025 – June 2025</i></p>
-          <p class="indent-1">Practicum Team: Boston Children’s Hospital Vaccine Equity</p>
-          <p class="indent-2">• Created interactive data analysis and visualization statewide heatmap in Tableau using data from Google BigQuery.</p>
-          <p class="indent-2">• Visualizations revealed novel insights on correlations between MA city demographics and COVID-19 death rates.</p>
-          <p class="indent-2">• <b>Project Link: <a href="https://public.tableau.com/app/profile/anna.vasconcelos/viz/BostonChildrensHospitalVaccineEquitySp2025/BCHFinalStoryboard?publish=yes" target="_blank" rel="noopener noreferrer">shaotaihu/bchvac</a></b></p>
-        </div>
+          <p class="meta"><em>Boston University CDS Spark! | January 2025 – June 2025</em></p>
+          <p class="indent">Practicum Team: Boston Children’s Hospital Vaccine Equity</p>
+          <p class="indent">• Created interactive data analysis and visualization statewide heatmap in Tableau using data from Google BigQuery.</p>
+          <p class="indent">• Visualizations revealed novel insights on correlations between MA city demographics and COVID-19 death rates.</p>
+          <p class="indent">• <strong>Project Link: <a href="https://public.tableau.com/app/profile/anna.vasconcelos/viz/BostonChildrensHospitalVaccineEquitySp2025/BCHFinalStoryboard?publish=yes" target="_blank" rel="noopener noreferrer">shaotaihu/bchvac</a></strong></p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Shenzhen Audaque Technology Co., Ltd Research Internship</h3>
-          <p class="meta"><i>In-Person Research Intern | China | July 2024 – September 2024</i></p>
-          <p class="indent-1">• Researched and developed 4 deployable sentiment analysis models with Python and Audaque's LLM, models achieved 90%+ precision.</p>
-          <p class="indent-1">• Implemented NLP, tokenization, vectorization, TF-IDF, and Naive Bayes' algorithms to increase model precision.</p>
-          <p class="indent-1">• <b>Model Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Audaque_Intern/skl_model_ShaotaiHu.py" target="_blank" rel="noopener noreferrer">shaotaihu/Audaque</a></b></p>
-        </div>
+          <p class="meta"><em>In-Person Research Intern | China | July 2024 – September 2024</em></p>
+          <p class="indent">• Researched and developed 4 deployable sentiment analysis models with Python and Audaque's LLM, models achieved 90%+ precision.</p>
+          <p class="indent">• Implemented NLP, tokenization, vectorization, TF-IDF, and Naive Bayes' algorithms to increase model precision.</p>
+          <p class="indent">• <strong>Model Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Audaque_Intern/skl_model_ShaotaiHu.py" target="_blank" rel="noopener noreferrer">shaotaihu/Audaque</a></strong></p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Guangdong Skysec Information Technology Co., Ltd Internship</h3>
-          <p class="meta"><i>In-Person Tech Intern | China | July 2023 – August 2023</i></p>
-          <p class="indent-1">• Conducted NetFlow Analysis: Used Python to filter NetFlow data, implemented 3 Sigma rule to obtain port anomalies, visualized data.</p>
-          <p class="indent-1">• Researched Data/Network security and protection methods through learning Software Defined Perimeter (SDP), Zero Trust and Network Isolation.</p>
-        </div>
+          <p class="meta"><em>In-Person Tech Intern | China | July 2023 – August 2023</em></p>
+          <p class="indent">• Conducted NetFlow Analysis: Used Python to filter NetFlow data, implemented 3 Sigma rule to obtain port anomalies, visualized data.</p>
+          <p class="indent">• Researched Data/Network security and protection methods through learning Software Defined Perimeter (SDP), Zero Trust and Network Isolation.</p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Boston University Fenway Dining Database Management &amp; Front of House Staff</h3>
-          <p class="meta"><i>Boston, United States | September 2023 – January 2025</i></p>
-          <p class="indent-1">• Conducted data entry &amp; DB management for dining hall food consumed and wasted weekly.</p>
-          <p class="indent-1">• Provided friendly customer service &amp; effective assistance to student needs, and managed food supply &amp; storage.</p>
-        </div>
+          <p class="meta"><em>Boston, United States | September 2023 – January 2025</em></p>
+          <p class="indent">• Conducted data entry &amp; DB management for dining hall food consumed and wasted weekly.</p>
+          <p class="indent">• Provided friendly customer service &amp; effective assistance to student needs, and managed food supply &amp; storage.</p>
+        </article>
       </section>
 
-      <section id="course-work" class="card">
+      <section id="course-work" class="block">
         <h2>Project Experience</h2>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Data Science Course Projects</h3>
-          <p class="meta"><i>Boston University CDS | 2023 - Present</i></p>
-          <p class="indent-1">Project 1: Tumor Malignancy Machine Learning Model | Grade: A</p>
-          <p class="indent-2">• Developed random forests ML models using Python on breast tumor characteristics dataset. Models predicted tumor malignancy, conducted T and ANOVA tests to find significance.</p>
-          <p class="indent-2">• Researched and analyzed characteristics of breast tumors that made it malignant.</p>
-          <p class="indent-2">• <b>Project 1 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Course_Projects/Tumor_ML/DS_110_Final_Project_Shaotai_(Max)_Hu_and_Shravya_Tathineni.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/cML</a></b></p>
+          <p class="meta"><em>Boston University CDS | 2023 - Present</em></p>
+          <p class="indent">Project 1: Tumor Malignancy Machine Learning Model | Grade: A</p>
+          <p class="indent">• Developed random forests ML models using Python on breast tumor characteristics dataset. Models predicted tumor malignancy, conducted T and ANOVA tests to find significance.</p>
+          <p class="indent">• Researched and analyzed characteristics of breast tumors that made it malignant.</p>
+          <p class="indent">• <strong>Project 1 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Course_Projects/Tumor_ML/DS_110_Final_Project_Shaotai_(Max)_Hu_and_Shravya_Tathineni.ipynb" target="_blank" rel="noopener noreferrer">shaotaihu/cML</a></strong></p>
 
-          <p class="indent-1">Project 2: California Road Network Data Graph Analysis | Grade: A</p>
-          <p class="indent-2">• Constructed graphs in Rust to analyze CA Road network effectiveness using node centrality, closeness centrality, average distances. Intensive usage of VecDeque, Vertices, Structs.</p>
-          <p class="indent-2">• <b>Project 2 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Course_Projects/Rust_graphs/src/main.rs" target="_blank" rel="noopener noreferrer">shaotaihu/cRust</a></b></p>
+          <p class="indent">Project 2: California Road Network Data Graph Analysis | Grade: A</p>
+          <p class="indent">• Constructed graphs in Rust to analyze CA Road network effectiveness using node centrality, closeness centrality, average distances. Intensive usage of VecDeque, Vertices, Structs.</p>
+          <p class="indent">• <strong>Project 2 Repo: <a href="https://github.com/shumx03/ShaotaiHu_Research_PublicRepo2025/blob/main/Course_Projects/Rust_graphs/src/main.rs" target="_blank" rel="noopener noreferrer">shaotaihu/cRust</a></strong></p>
 
-          <p class="indent-1">Other Data Science Projects:</p>
-          <p class="indent-2">• Implemented A/B testing, bootstrapping, random sampling, regression inference, and hypothesis testing on large public health data sets, predicted chances of diabetics getting cardiovascular diseases and how cholesterol, blood pressure, obesity affects such chances, visualized results.</p>
-        </div>
+          <p class="indent">Other Data Science Projects:</p>
+          <p class="indent">• Implemented A/B testing, bootstrapping, random sampling, regression inference, and hypothesis testing on large public health data sets, predicted chances of diabetics getting cardiovascular diseases and how cholesterol, blood pressure, obesity affects such chances, visualized results.</p>
+        </article>
       </section>
 
-      <section id="life" class="card">
+      <section id="life" class="block">
         <h2>LEADERSHIP &amp; SERVICE ACTIVITES</h2>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>The Global Tutoring Club Founder</h3>
-          <p class="meta"><i>The Hun School | Princeton, United States | 2019 – 2022</i></p>
-          <p class="indent-1">• Created free public educational videos on culture, education, and politics in the US, partnered with Special Summer.</p>
-          <p class="indent-1">• Led 35+ members and recognized on school news. <b>Club Website: <a href="https://specialsummer.wixsite.com/volunteer-teaching/special-summer-the-global-tutoring-" target="_blank" rel="noopener noreferrer">shaotaihu/gbtc</a></b></p>
-        </div>
+          <p class="meta"><em>The Hun School | Princeton, United States | 2019 – 2022</em></p>
+          <p class="indent">• Created free public educational videos on culture, education, and politics in the US, partnered with Special Summer.</p>
+          <p class="indent">• Led 35+ members and recognized on school news. <strong>Club Website: <a href="https://specialsummer.wixsite.com/volunteer-teaching/special-summer-the-global-tutoring-" target="_blank" rel="noopener noreferrer">shaotaihu/gbtc</a></strong></p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Blood Donation Ambassador Volunteer at Red Cross</h3>
-          <p class="meta"><i>Virtual, United States | 2019 – 2021</i></p>
-          <p class="indent-1">• Called 50+ blood donors weekly to schedule future blood donations. Resolved time conflicts effectively.</p>
-          <p class="indent-1">• Participated in weekly meetings to regulate workflow using Excel and Google Sheets, managed large amounts of contact information.</p>
-        </div>
+          <p class="meta"><em>Virtual, United States | 2019 – 2021</em></p>
+          <p class="indent">• Called 50+ blood donors weekly to schedule future blood donations. Resolved time conflicts effectively.</p>
+          <p class="indent">• Participated in weekly meetings to regulate workflow using Excel and Google Sheets, managed large amounts of contact information.</p>
+        </article>
 
-        <div class="experience-item">
+        <article class="item">
           <h3>Math Teacher Volunteer at World Family Children Foundation</h3>
-          <p class="meta"><i>Virtual, United States | 2019 – 2022</i></p>
-          <p class="indent-1">• Taught algebra &amp; geometry to children on autism spectrum/orphans, hoping to make them more cheerful and inspire learning.</p>
-          <p class="indent-1">• Designed 50+ pages of educational materials &amp; some workshops.</p>
-        </div>
+          <p class="meta"><em>Virtual, United States | 2019 – 2022</em></p>
+          <p class="indent">• Taught algebra &amp; geometry to children on autism spectrum/orphans, hoping to make them more cheerful and inspire learning.</p>
+          <p class="indent">• Designed 50+ pages of educational materials &amp; some workshops.</p>
+        </article>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>By Shaotai Hu | Last updated 6/4/2025 | I am grateful to everyone who has given me an opportunity and helped me get to where I am.</p>
-    </footer>
   </div>
 </body>
 </html>
+
 
