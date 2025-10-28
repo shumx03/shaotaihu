@@ -2,7 +2,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
-  --deep-ocean: #002b36;      /* deep ocean blue used consistently */
+  --deep-ocean: #092a36;      /* deep ocean blue used consistently */
   --card-bg: rgba(255,255,255,0.01);
   --bright-underline: #29b6f6; /* brighter underline color for headings */
   --link-blue: #007bff;       /* bright blue for all links */
