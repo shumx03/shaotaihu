@@ -2,10 +2,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
-  --deep-ocean: #092a36;      /* deep ocean blue used consistently */
+  --deep-ocean: #001d2e;      /* page background (requested) */
   --card-bg: rgba(255,255,255,0.01);
-  --bright-underline: #29b6f6; /* brighter underline color for headings */
-  --link-blue: #007bff;       /* bright blue for all links */
+  --bright-underline: #29b6f6;
+  --link-blue: #007bff;       /* bright blue for all links/buttons */
   --muted: #9dbac6;
   --shadow: 0 6px 14px rgba(0,0,0,0.42);
   --max-width: 1200px;
@@ -14,13 +14,14 @@
   line-height: 1.35;
 }
 
-/* Global background consistent deep ocean */
+/* Global page background and default text color (non-link text white) */
 html, body {
   height: 100%;
   background-color: var(--deep-ocean);
-  color: #eef6fb;
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 /* Page container: wider, very tight padding, minimal gaps */
@@ -38,7 +39,7 @@ html, body {
 .site-header{
   padding: 6px 6px 8px 6px;
   background: transparent;
-  margin-bottom: 8px; /* very tight gap below header */
+  margin-bottom: 6px; /* tightened gap below header */
 }
 
 /* Top: inline layout, minimal gaps */
@@ -48,7 +49,7 @@ html, body {
   gap: 10px;
 }
 
-/* Slightly smaller profile image to keep header visually short */
+/* Profile image frame (slightly smaller to keep header visually short) */
 .profile-frame{
   width: 128px;
   height: 128px;
@@ -75,22 +76,22 @@ html, body {
 .title-block .name{
   font-size: 1.28rem;
   margin-bottom: 4px;
-  color: #e9fbff;
+  color: #ffffff; /* explicit white */
   font-weight: 700;
 }
 
-/* Contact list inline and compact */
+/* Contact list inline and compact; keep text white but links blue */
 .contact-list{
   list-style: none;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  color: var(--muted);
+  color: #ffffff;
   font-weight: 500;
-  font-size: 0. ninerem;
+  font-size: 0.92rem;
 }
 
-/* Bright blue for all links (email, github, repos, nav, etc.) */
+/* Bright blue for all links (email, github, repos, nav, buttons) */
 a {
   color: var(--link-blue);
   text-decoration: none;
@@ -113,7 +114,7 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   flex-wrap: wrap;
 }
 
-/* Smaller interactive buttons */
+/* Smaller interactive buttons (links styled as buttons) */
 .quick-nav a{
   display: inline-block;
   padding: 5px 9px;
@@ -149,9 +150,9 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.32);
 }
 
-/* Headings with a brighter, thin underline */
+/* Headings with a brighter underline (brighter and more visible) */
 .card h2{
-  color: #e8fbff;
+  color: #ffffff; /* heading text white */
   font-size: 1.00rem;
   margin-bottom: 6px;
   font-weight: 700;
@@ -160,9 +161,9 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   border-bottom: 2px solid var(--bright-underline);
 }
 
-/* Tighter paragraph spacing and slightly smaller text */
+/* Tighter paragraph spacing and ensure non-link text white */
 .card p{
-  color: var(--muted);
+  color: #ffffff;
   font-size: 0.95rem;
   margin-bottom: 6px;
 }
@@ -177,31 +178,42 @@ a:hover { text-decoration: underline; color: #66a8ff; }
 }
 
 .experience-item h3{
-  color: #e8fbff;
+  color: #ffffff;
   font-size: 0.95rem;
   margin-bottom: 6px;
   font-weight: 600;
 }
 
 .experience-item .meta{
-  color: var(--muted);
+  color: #ffffff;
   font-size: 0.84rem;
   margin-bottom: 6px;
   font-style: italic;
 }
 
 /* Indentation utilities compacted */
-.indent-1{ margin-left: 0.5rem; color: var(--muted); }
-.indent-2{ margin-left: 1rem; color: var(--muted); }
+.indent-1{ margin-left: 0.5rem; color: #ffffff; }
+.indent-2{ margin-left: 1rem; color: #ffffff; }
 
 /* Footer compact and tight */
 .site-footer{
   margin-top: 8px;
   padding: 8px;
   text-align: center;
-  color: #cfeff6;
+  color: #ffffff;
   font-size: 0.9rem;
   border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Ensure buttons use the link blue color where relevant */
+button {
+  background: rgba(255,255,255,0.01);
+  color: var(--link-blue);
+  border: 1px solid rgba(255,255,255,0.02);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* Responsive adjustments: keep layout tight on small screens */
@@ -220,4 +232,3 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   .quick-nav ul{ justify-content: center; gap: 6px; }
   .page{ padding: 8px; margin: 8px; }
 }
-
