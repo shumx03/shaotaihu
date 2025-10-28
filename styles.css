@@ -1,234 +1,196 @@
-/* Basic reset */
+/* Reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Palette and typography */
 :root{
-  --deep-ocean: #001d2e;      /* page background (requested) */
-  --card-bg: rgba(255,255,255,0.01);
-  --bright-underline: #29b6f6;
-  --link-blue: #007bff;       /* bright blue for all links/buttons */
-  --muted: #9dbac6;
-  --shadow: 0 6px 14px rgba(0,0,0,0.42);
-  --max-width: 1200px;
-  --radius: 8px;
+  --bg: #001d2e;           /* deep ocean */
+  --panel: rgba(255,255,255,0.02);
+  --accent: #29b6f6;       /* subtle ocean accent for lines */
+  --link: #007bff;         /* bright link blue */
+  --muted: rgba(255,255,255,0.85);
+  --shadow: 0 8px 24px rgba(0,0,0,0.45);
+  --max: 1180px;
+  --radius: 10px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.35;
+  line-height: 1.42;
 }
 
-/* Global page background and default text color (non-link text white) */
-html, body {
+/* Page background */
+html, body{
   height: 100%;
-  background-color: var(--deep-ocean);
+  background-color: var(--bg);
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 15.5px;
 }
 
-/* Page container: wider, very tight padding, minimal gaps */
-.page{
-  max-width: var(--max-width);
-  margin: 12px auto;
-  padding: 10px;
-  background: var(--card-bg);
-  border-radius: 8px;
+/* Overall layout: sidebar + main content */
+.site{
+  max-width: var(--max);
+  margin: 18px auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+/* Sidebar (left column) */
+.sidebar{
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 14px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255,255,255,0.02);
-}
-
-/* Header compact and balanced with smaller gaps */
-.site-header{
-  padding: 6px 6px 8px 6px;
-  background: transparent;
-  margin-bottom: 6px; /* tightened gap below header */
-}
-
-/* Top: inline layout, minimal gaps */
-.header-top{
+  border: 1px solid rgba(255,255,255,0.03);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 10px;
 }
 
-/* Profile image frame (slightly smaller to keep header visually short) */
-.profile-frame{
-  width: 128px;
-  height: 128px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.015);
-  border: 1px solid rgba(255,255,255,0.02);
+/* Photo and name */
+.photo-wrap{
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.36);
-  flex-shrink: 0;
-}
-
-.profile-photo{
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-  border: 1px solid rgba(255,255,255,0.02);
-}
-
-/* Title block with very tight spacing */
-.title-block .name{
-  font-size: 1.28rem;
   margin-bottom: 4px;
-  color: #ffffff; /* explicit white */
-  font-weight: 700;
 }
 
-/* Contact list inline and compact; keep text white but links blue */
-.contact-list{
+.photo{
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.36);
+}
+
+.name{
+  font-size: 1.15rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 4px 0 6px 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Contact list */
+.contact{
   list-style: none;
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
   color: #ffffff;
-  font-weight: 500;
   font-size: 0.92rem;
 }
 
-/* Bright blue for all links (email, github, repos, nav, buttons) */
-a {
-  color: var(--link-blue);
-  text-decoration: none;
-  font-weight: 600;
-}
+.contact a{ color: var(--link); text-decoration: none; }
+.contact a:hover{ text-decoration: underline; }
 
-a:hover { text-decoration: underline; color: #66a8ff; }
-
-/* Horizontal interactive buttons smaller and tighter, placed under header-top */
-.quick-nav{
-  margin-top: 6px;
-  width: 100%;
-}
-
-.quick-nav ul{
+/* Sidebar navigation */
+.side-nav ul{
   list-style: none;
   display: flex;
+  flex-direction: column;
   gap: 6px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-/* Smaller interactive buttons (links styled as buttons) */
-.quick-nav a{
-  display: inline-block;
-  padding: 5px 9px;
-  background: rgba(255,255,255,0.01);
-  color: var(--link-blue);
-  font-weight: 600;
-  font-size: 0.9rem;
-  border-radius: 7px;
-  border: 1px solid rgba(255,255,255,0.02);
-  transition: transform .10s ease, background .10s ease;
-}
-
-.quick-nav a:hover{
-  transform: translateY(-2px);
-  background: rgba(255,255,255,0.02);
-}
-
-/* Main content uses minimal gaps and tight vertical rhythm */
-.content{
   margin-top: 6px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 6px;
-  padding-bottom: 6px;
 }
 
-/* Cards minimal and flat so background is consistent */
-.card{
-  background: rgba(255,255,255,0.007);
-  padding: 10px;
-  border-radius: var(--radius);
+.side-nav a{
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--link);
+  background: rgba(255,255,255,0.006);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
   border: 1px solid rgba(255,255,255,0.015);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.32);
 }
 
-/* Headings with a brighter underline (brighter and more visible) */
-.card h2{
-  color: #ffffff; /* heading text white */
-  font-size: 1.00rem;
-  margin-bottom: 6px;
+.side-nav a:hover{
+  background: rgba(41,182,246,0.06);
+  transform: translateY(-1px);
+}
+
+/* Sidebar footer small */
+.sidebar-footer{ text-align: center; color: rgba(255,255,255,0.7); font-size: 0.82rem; }
+
+/* Main column */
+.main{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Content blocks */
+.block{
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.36);
+}
+
+/* Heading style with brighter underline */
+.block h2{
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 6px;
-  border-bottom: 2px solid var(--bright-underline);
+  border-bottom: 2px solid var(--accent);
 }
 
-/* Tighter paragraph spacing and ensure non-link text white */
-.card p{
+/* Block content text */
+.block p{
   color: #ffffff;
   font-size: 0.95rem;
   margin-bottom: 6px;
+  line-height: 1.36;
 }
 
-/* Experience items compact */
-.experience-item{
-  background: rgba(255,255,255,0.003);
-  padding: 8px 10px;
-  border-radius: 7px;
+/* Experience / article items inside a block */
+.item{
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.006);
   border: 1px solid rgba(255,255,255,0.01);
-  margin-top: 8px;
 }
 
-.experience-item h3{
-  color: #ffffff;
-  font-size: 0.95rem;
+.item h3{
+  font-size: 0.98rem;
   margin-bottom: 6px;
+  color: #ffffff;
   font-weight: 600;
 }
 
-.experience-item .meta{
-  color: #ffffff;
-  font-size: 0.84rem;
-  margin-bottom: 6px;
-  font-style: italic;
-}
+.meta{ color: rgba(255,255,255,0.85); font-size: 0.88rem; margin-bottom: 6px; font-style: italic; }
 
-/* Indentation utilities compacted */
-.indent-1{ margin-left: 0.5rem; color: #ffffff; }
-.indent-2{ margin-left: 1rem; color: #ffffff; }
+/* Indentation for bullet style lines kept inline */
+.indent{ margin-left: 0.9rem; color: #ffffff; }
 
-/* Footer compact and tight */
-.site-footer{
-  margin-top: 8px;
-  padding: 8px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(255,255,255,0.02);
-}
+/* Links in main content */
+a{ color: var(--link); }
+a:hover{ color: #66a8ff; text-decoration: underline; }
 
-/* Ensure buttons use the link blue color where relevant */
-button {
-  background: rgba(255,255,255,0.01);
-  color: var(--link-blue);
-  border: 1px solid rgba(255,255,255,0.02);
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-}
+/* Tighten vertical rhythm globally for a compact, research-profile look */
+.block, .item { margin-bottom: 4px; padding-bottom: 8px; }
+.block p, .item p { margin-bottom: 6px; }
 
-/* Responsive adjustments: keep layout tight on small screens */
-@media (max-width: 900px){
-  :root{ --max-width: 920px; }
-  .profile-frame{ width: 112px; height: 112px; }
-  .profile-photo{ width: 104px; height: 104px; }
-}
+/* Footer / if needed (keeps minimal) */
+.site footer { display: none; }
 
-@media (max-width: 640px){
-  .header-top{ flex-direction: column; align-items: center; gap: 8px; }
-  .title-block .name{ text-align: center; }
-  .contact-list{ justify-content: center; gap: 6px; }
-  .profile-frame{ width: 100px; height: 100px; }
-  .profile-photo{ width: 92px; height: 92px; }
-  .quick-nav ul{ justify-content: center; gap: 6px; }
-  .page{ padding: 8px; margin: 8px; }
+/* Responsive: collapse to single column on narrow screens */
+@media (max-width: 980px){
+  .site{ grid-template-columns: 1fr; padding: 10px; gap: 8px; }
+  .sidebar{ order: 2; flex-direction: row; align-items: center; gap: 12px; padding: 10px; }
+  .photo{ width: 96px; height: 96px; }
+  .name{ text-align: left; font-size: 1rem; margin: 0; }
+  .contact{ flex-direction: row; gap: 10px; font-size: 0.86rem; }
+  .side-nav{ order: 1; }
+  .main{ order: 3; }
 }
