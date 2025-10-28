@@ -53,16 +53,13 @@ html, body{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .photo{
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 0px;
-  /* border removed as requested */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.36);
 }
 
 .name{
