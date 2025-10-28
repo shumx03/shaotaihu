@@ -2,78 +2,79 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
-  --bg: #003241;          /* single consistent dark-blue ocean background */
-  --card-bg: rgba(255,255,255,0.02);
-  --accent-blue: #007bff; /* bright blue for all links */
+  --deep-ocean: #002b36;      /* deep ocean blue used consistently */
+  --card-bg: rgba(255,255,255,0.01);
+  --bright-underline: #29b6f6; /* brighter underline color for headings */
+  --link-blue: #007bff;       /* bright blue for all links */
   --muted: #9dbac6;
-  --shadow: 0 6px 18px rgba(0,0,0,0.45);
-  --max-width: 1180px;
-  --radius: 10px;
+  --shadow: 0 6px 14px rgba(0,0,0,0.42);
+  --max-width: 1200px;
+  --radius: 8px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
-/* Global background consistent across entire page */
+/* Global background consistent deep ocean */
 html, body {
   height: 100%;
-  background-color: var(--bg);
+  background-color: var(--deep-ocean);
   color: #eef6fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Page container: wider and flatter, tighter padding */
+/* Page container: wider, very tight padding, minimal gaps */
 .page{
   max-width: var(--max-width);
-  margin: 18px auto;
-  padding: 12px 14px;
+  margin: 12px auto;
+  padding: 10px;
   background: var(--card-bg);
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.02);
 }
 
-/* Header compact and balanced */
+/* Header compact and balanced with smaller gaps */
 .site-header{
-  padding: 8px 6px;
+  padding: 6px 6px 8px 6px;
   background: transparent;
-  margin-bottom: 10px; /* tighter gap below header */
+  margin-bottom: 8px; /* very tight gap below header */
 }
 
-/* Header top: inline layout, smaller gaps */
+/* Top: inline layout, minimal gaps */
 .header-top{
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
-/* Slightly smaller profile image (requested smaller than previous) */
+/* Slightly smaller profile image to keep header visually short */
 .profile-frame{
-  width: 140px;
-  height: 140px;
+  width: 128px;
+  height: 128px;
   border-radius: 8px;
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.015);
+  border: 1px solid rgba(255,255,255,0.02);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.36);
   flex-shrink: 0;
 }
 
 .profile-photo{
-  width: 132px;
-  height: 132px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 6px;
   display: block;
-  border: 1px solid rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.02);
 }
 
-/* Title block with reduced vertical spacing */
+/* Title block with very tight spacing */
 .title-block .name{
-  font-size: 1.35rem;
-  margin-bottom: 6px;
+  font-size: 1.28rem;
+  margin-bottom: 4px;
   color: #e9fbff;
   font-weight: 700;
 }
@@ -82,16 +83,16 @@ html, body {
 .contact-list{
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   color: var(--muted);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0. ninerem;
 }
 
 /* Bright blue for all links (email, github, repos, nav, etc.) */
 a {
-  color: var(--accent-blue);
+  color: var(--link-blue);
   text-decoration: none;
   font-weight: 600;
 }
@@ -100,26 +101,27 @@ a:hover { text-decoration: underline; color: #66a8ff; }
 
 /* Horizontal interactive buttons smaller and tighter, placed under header-top */
 .quick-nav{
-  margin-top: 8px;
+  margin-top: 6px;
   width: 100%;
 }
 
 .quick-nav ul{
   list-style: none;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
+/* Smaller interactive buttons */
 .quick-nav a{
   display: inline-block;
-  padding: 6px 10px;
+  padding: 5px 9px;
   background: rgba(255,255,255,0.01);
-  color: var(--accent-blue);
+  color: var(--link-blue);
   font-weight: 600;
-  font-size: 0.92rem;
-  border-radius: 8px;
+  font-size: 0.9rem;
+  border-radius: 7px;
   border: 1px solid rgba(255,255,255,0.02);
   transition: transform .10s ease, background .10s ease;
 }
@@ -129,33 +131,33 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   background: rgba(255,255,255,0.02);
 }
 
-/* Main content uses tighter vertical spacing and smaller gaps */
+/* Main content uses minimal gaps and tight vertical rhythm */
 .content{
-  margin-top: 8px;
+  margin-top: 6px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
-  padding-bottom: 8px;
+  gap: 6px;
+  padding-bottom: 6px;
 }
 
-/* Cards are flatter and compact */
+/* Cards minimal and flat so background is consistent */
 .card{
-  background: rgba(255,255,255,0.01);
-  padding: 12px;
+  background: rgba(255,255,255,0.007);
+  padding: 10px;
   border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.02);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.36);
+  border: 1px solid rgba(255,255,255,0.015);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.32);
 }
 
-/* Smaller headings to reduce vertical footprint */
+/* Headings with a brighter, thin underline */
 .card h2{
   color: #e8fbff;
   font-size: 1.00rem;
   margin-bottom: 6px;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255,255,255,0.02);
   padding-bottom: 6px;
+  border-bottom: 2px solid var(--bright-underline);
 }
 
 /* Tighter paragraph spacing and slightly smaller text */
@@ -167,34 +169,34 @@ a:hover { text-decoration: underline; color: #66a8ff; }
 
 /* Experience items compact */
 .experience-item{
-  background: rgba(255,255,255,0.005);
+  background: rgba(255,255,255,0.003);
   padding: 8px 10px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.02);
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,0.01);
   margin-top: 8px;
 }
 
 .experience-item h3{
   color: #e8fbff;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   margin-bottom: 6px;
   font-weight: 600;
 }
 
 .experience-item .meta{
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   margin-bottom: 6px;
   font-style: italic;
 }
 
 /* Indentation utilities compacted */
-.indent-1{ margin-left: 0.6rem; color: var(--muted); }
-.indent-2{ margin-left: 1.1rem; color: var(--muted); }
+.indent-1{ margin-left: 0.5rem; color: var(--muted); }
+.indent-2{ margin-left: 1rem; color: var(--muted); }
 
 /* Footer compact and tight */
 .site-footer{
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 8px;
   text-align: center;
   color: #cfeff6;
@@ -202,19 +204,19 @@ a:hover { text-decoration: underline; color: #66a8ff; }
   border-top: 1px solid rgba(255,255,255,0.02);
 }
 
-/* Responsive adjustments for very small screens keep layout tight */
+/* Responsive adjustments: keep layout tight on small screens */
 @media (max-width: 900px){
-  :root{ --max-width: 860px; }
-  .profile-frame{ width: 120px; height: 120px; }
-  .profile-photo{ width: 112px; height: 112px; }
+  :root{ --max-width: 920px; }
+  .profile-frame{ width: 112px; height: 112px; }
+  .profile-photo{ width: 104px; height: 104px; }
 }
 
 @media (max-width: 640px){
   .header-top{ flex-direction: column; align-items: center; gap: 8px; }
   .title-block .name{ text-align: center; }
-  .contact-list{ justify-content: center; gap: 8px; }
-  .profile-frame{ width: 112px; height: 112px; }
-  .profile-photo{ width: 104px; height: 104px; }
+  .contact-list{ justify-content: center; gap: 6px; }
+  .profile-frame{ width: 100px; height: 100px; }
+  .profile-photo{ width: 92px; height: 92px; }
   .quick-nav ul{ justify-content: center; gap: 6px; }
   .page{ padding: 8px; margin: 8px; }
 }
