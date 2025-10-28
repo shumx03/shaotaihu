@@ -2,195 +2,191 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root{
-  --bg-deep: #001d2e;
-  --bg-mid:  #00394f;
+  --bg-top: #002438;   /* top of ocean gradient */
+  --bg-bottom:#003f57; /* bottom of ocean gradient */
   --accent:  #0fb0d6;
   --muted:   #9dbac6;
   --shadow:  0 8px 24px rgba(0,0,0,0.6);
-  --max-width: 980px;
-  --radius: 12px;
+  --max-width: 1160px; /* wider layout */
+  --radius: 10px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Page background */
-html,body{
+/* Full-page smooth gradient so color change is continuous across the whole page */
+html, body {
   height: 100%;
-  background: linear-gradient(180deg,var(--bg-deep) 0%, var(--bg-mid) 60%);
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
   color: #eef6fb;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  line-height:1.5;
+  line-height: 1.45;
 }
 
-/* Centered page wrapper */
+/* Centered page wrapper with more horizontal space and reduced vertical padding */
 .page{
   max-width: var(--max-width);
-  margin: 34px auto;
-  padding: 28px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border-radius: 16px;
+  margin: 24px auto;
+  padding: 18px 20px;
+  background: rgba(6,22,30,0.18); /* subtle translucent plate so background gradient remains visible */
+  border-radius: 12px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Header layout */
+/* Header - make it compact (shorter visually) */
 .site-header{
-  padding: 18px 22px;
-  background: linear-gradient(180deg, rgba(4,30,45,0.55), rgba(2,20,30,0.35));
+  padding: 12px 14px;
+  background: transparent;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   position: relative;
-  overflow: visible;
 }
 
-.header-inner{
-  display: grid;
-  grid-template-columns: 150px 1fr 220px;
-  gap: 20px;
+/* Top area: image + title side-by-side, tighter spacing */
+.header-top{
+  display: flex;
   align-items: center;
+  gap: 18px;
 }
 
-/* Fixed framed profile image */
+/* Slightly larger profile image in a compact frame */
 .profile-frame{
-  width: 150px;
-  height: 150px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(15,176,214,0.08), rgba(15,176,214,0.02));
-  border: 1px solid rgba(15,176,214,0.18);
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  background: rgba(15,176,214,0.04);
+  border: 1px solid rgba(15,176,214,0.14);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
   flex-shrink: 0;
 }
 
 .profile-photo{
-  width: 140px;
-  height: 140px;
+  width: 162px;
+  height: 162px;
   object-fit: cover;
   border-radius: 8px;
   display: block;
-  border: 2px solid rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Title and contact */
+/* Title block: reduce vertical space and make name bolder */
 .title-block .name{
-  font-size: 1.6rem;
-  letter-spacing: -0.02em;
+  font-size: 1.45rem;
+  margin-bottom: 6px;
   color: #e9fbff;
-  margin-bottom: 8px;
   font-weight: 700;
 }
 
+/* Contact list inline; allow more items per line */
 .contact-list{
   list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
   color: var(--muted);
   font-weight: 500;
   font-size: 0.95rem;
 }
 
-.contact-list a{
-  color: var(--accent);
-  text-decoration: none;
-  word-break: break-all;
+/* Horizontal navigation row placed directly under header-top */
+.quick-nav{
+  margin-top: 10px;
+  width: 100%;
 }
 
-.contact-list a:hover{ text-decoration: underline; color: #8fe8ff; }
-
-/* Quick navigation (right side) */
 .quick-nav ul{
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-end;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
+/* Interactive buttons horizontally across */
 .quick-nav a{
   display: inline-block;
-  padding: 8px 12px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.02);
   color: #dff7ff;
   font-weight: 600;
   font-size: 0.95rem;
   border-radius: 8px;
   text-decoration: none;
   border: 1px solid rgba(255,255,255,0.02);
-  transition: transform .14s ease, background .14s ease, color .14s ease;
+  transition: transform .12s ease, background .12s ease, color .12s ease;
 }
 
 .quick-nav a:hover{
-  transform: translateY(-3px);
-  background: linear-gradient(90deg, rgba(11,129,155,0.18), rgba(15,176,214,0.06));
+  transform: translateY(-2px);
+  background: rgba(15,176,214,0.08);
   color: #bff8ff;
 }
 
-/* Main content area */
+/* Main content uses tighter vertical spacing, cards are flatter */
 .content{
-  margin-top: 18px;
+  margin-top: 12px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  gap: 10px;
   padding-bottom: 10px;
 }
 
-/* Card style for each section */
+/* Cards are more transparent so the global gradient shows through evenly */
 .card{
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  padding: 18px;
+  background: rgba(255,255,255,0.02);
+  padding: 14px;
   border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.03);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.025);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.36);
 }
 
+/* Slightly smaller heading ornament to reduce vertical footprint */
 .card h2{
-  color: #dff7ff;
-  font-size: 1.05rem;
-  letter-spacing: 0.04em;
-  margin-bottom: 10px;
+  color: #e8fbff;
+  font-size: 1.02rem;
+  margin-bottom: 8px;
   font-weight: 700;
-  display: inline-block;
-  border-bottom: 3px solid rgba(15,176,214,0.12);
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   text-transform: uppercase;
+  border-bottom: 2px solid rgba(15,176,214,0.08);
 }
 
-/* Text styles inside cards */
+/* Tighter paragraph spacing */
 .card p{
   color: var(--muted);
-  font-size: 0.98rem;
-  margin-bottom: 10px;
+  font-size: 0.96rem;
+  margin-bottom: 8px;
 }
 
-/* Experience items */
+/* Experience items flatter and compact */
 .experience-item{
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-  padding: 14px;
-  border-radius: 10px;
+  background: rgba(255,255,255,0.01);
+  padding: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.02);
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .experience-item h3{
   color: #e8fbff;
-  font-size: 1rem;
+  font-size: 0.98rem;
   margin-bottom: 6px;
   font-weight: 600;
 }
 
 .experience-item .meta{
   color: var(--muted);
-  font-size: 0.9rem;
-  margin-bottom: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 6px;
   font-style: italic;
 }
 
-/* Indentation utilities (kept text as-is) */
-.indent-1{ margin-left: 0.9rem; color: var(--muted); }
-.indent-2{ margin-left: 1.8rem; color: var(--muted); }
+/* Indentation utilities retained (compact values) */
+.indent-1{ margin-left: 0.7rem; color: var(--muted); }
+.indent-2{ margin-left: 1.4rem; color: var(--muted); }
 
 /* Links inside content */
 .content a{
@@ -201,29 +197,37 @@ html,body{
 
 .content a:hover{ text-decoration: underline; color: #8fe8ff; }
 
-/* Footer */
+/* Footer compact */
 .site-footer{
-  margin-top: 18px;
-  padding: 12px;
+  margin-top: 14px;
+  padding: 10px;
   text-align: center;
   color: #cfeff6;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   border-top: 1px solid rgba(255,255,255,0.02);
 }
 
-/* Responsive adjustments */
-@media (max-width: 880px){
-  .header-inner{ grid-template-columns: 120px 1fr; grid-template-rows: auto auto; gap: 12px; }
-  .quick-nav{ grid-column: 1 / -1; justify-self: start; }
-  .quick-nav ul{ flex-direction: row; gap: 8px; flex-wrap: wrap; }
-  .profile-frame{ width: 120px; height: 120px; }
-  .profile-photo{ width: 110px; height: 110px; }
-  .page{ margin: 18px; padding: 18px; }
+/* Responsive adjustments: keep header compact and horizontal where possible */
+@media (max-width: 1080px){
+  :root{ --max-width: 920px; }
+  .profile-frame{ width: 150px; height: 150px; }
+  .profile-photo{ width: 142px; height: 142px; }
+  .contact-list{ gap: 10px; }
 }
 
-@media (max-width: 520px){
-  .header-inner{ grid-template-columns: 1fr; gap: 12px; }
+@media (max-width: 720px){
+  :root{ --max-width: 640px; }
+  .header-top{ flex-direction: row; align-items: center; gap: 12px; }
+  .profile-frame{ width: 120px; height: 120px; }
+  .profile-photo{ width: 112px; height: 112px; }
   .quick-nav ul{ justify-content: center; }
-  .contact-list{ justify-content: flex-start; gap: 8px; }
-  .card p{ font-size: 0.96rem; }
+}
+
+@media (max-width: 480px){
+  .header-top{ flex-direction: column; align-items: center; gap: 10px; }
+  .title-block .name{ text-align: center; }
+  .contact-list{ justify-content: center; gap: 8px; }
+  .profile-frame{ width: 110px; height: 110px; }
+  .profile-photo{ width: 102px; height: 102px; }
+  .page{ padding: 12px; margin: 12px; }
 }
