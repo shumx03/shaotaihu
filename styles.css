@@ -61,7 +61,7 @@ html, body{
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.03);
+  /* border removed as requested */
   box-shadow: 0 6px 12px rgba(0,0,0,0.36);
 }
 
