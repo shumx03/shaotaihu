@@ -181,7 +181,7 @@ a:hover{ color: #66a8ff; text-decoration: underline; }
 .block p, .item p { margin-bottom: 6px; }
 
 /* Footer / if needed (keeps minimal) */
-.site footer { display: none; }
+.site > footer { display: none; }
 
 /* Responsive: collapse to single column on narrow screens */
 @media (max-width: 980px){
