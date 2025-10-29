@@ -8,7 +8,7 @@
   --accent: #29b6f6;       /* subtle ocean accent for lines */
   --link: #007bff;         /* bright link blue */
   --muted: rgba(255,255,255,0.85);
-  --shadow: 0 8px 24px rgba(0,0,0,0.6);
+  --shadow: 0 8px 24px rgba(0,0,0,1);
   --max: 1180px;
   --radius: 10px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
