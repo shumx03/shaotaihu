@@ -6,7 +6,7 @@
   --bg: #001624;           /* deep ocean old: #001d2e, #021a29, #000000 */
   --panel: rgba(255,255,255,0.02);
   --accent: #29b6f6;       /* subtle ocean accent for lines */
-  --link: #00aaff;         /* bright link blue */
+  --link: #29b6f6;         /* bright link blue */
   --muted: rgba(255,255,255,0.85);
   --shadow: 0 8px 24px rgba(0,0,0,0.5);
   --max: 1180px;
