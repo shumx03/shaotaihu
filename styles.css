@@ -181,7 +181,7 @@ a:hover{ color: #66a8ff; text-decoration: underline; }
 .block, .item { margin-bottom: 4px; padding-bottom: 8px; }
 .block p, .item p { margin-bottom: 6px; }
 
-/* Footer / if needed (keeps minimal) */
+/* Footer */
 .site > footer { display: none; }
 
 /* Responsive: collapse to single column on narrow screens */
