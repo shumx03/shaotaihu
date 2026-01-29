@@ -28,7 +28,7 @@ html, body{
 /* Overall layout: sidebar + main content */
 .site{
   max-width: var(--max);
-  margin: 18px auto;
+  margin: 15px auto;
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 12px;
@@ -113,7 +113,7 @@ html, body{
 }
 
 /* Sidebar footer small */
-.sidebar-footer{ text-align: center; color: #ffffff; font-size: 0.86rem; }
+.sidebar-footer{ text-align: center; color: #ffffff; font-size: 0.88rem; }
 
 /* Main column */
 .main{
