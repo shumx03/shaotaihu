@@ -194,3 +194,14 @@ a:hover{ color: #66a8ff; text-decoration: underline; }
   .side-nav{ order: 1; }
   .main{ order: 3; }
 }
+
+.textbox{
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: var(--shadow);
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.36;
+}
