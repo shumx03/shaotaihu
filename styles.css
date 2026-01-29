@@ -171,6 +171,7 @@ html, body{
 
 /* Indentation for bullet style lines kept inline */
 .indent{ margin-left: 0.9rem; color: #ffffff; }
+.indent2{ margin-left: 1.8rem; color: #ffffff; }
 
 /* Links in main content */
 a{ color: var(--link); }
