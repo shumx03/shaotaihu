@@ -113,7 +113,7 @@ html, body{
 }
 
 /* Sidebar footer small */
-.sidebar-footer{ text-align: center; color: rgba(255,255,255,0.7); font-size: 0.82rem; }
+.sidebar-footer{ text-align: center; color: #ffffff; font-size: 0.86rem; }
 
 /* Main column */
 .main{
@@ -208,10 +208,11 @@ a:hover{ color: #66a8ff; text-decoration: underline; }
 
 
 .endnote{
-  margin-top: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   text-align: center;
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.75);
+  color: #ffffff;
   line-height: 1.4;
 }
 
