@@ -205,3 +205,13 @@ a:hover{ color: #66a8ff; text-decoration: underline; }
   font-size: 0.95rem;
   line-height: 1.36;
 }
+
+
+.endnote{
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.4;
+}
+
